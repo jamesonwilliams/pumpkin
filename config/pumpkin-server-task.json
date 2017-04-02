@@ -1,0 +1,32 @@
+{
+   "family" : "pumpkin",
+   "containerDefinitions" : [
+      {
+         "environment" : [
+            {
+               "value" : "KEY_FOO",
+               "name" : "AWS_ACCESS_KEY_ID"
+            },
+            {
+               "value" : "SO_SECRET_LOL",
+               "name" : "AWS_SECRET_ACCESS_KEY"
+            },
+            {
+               "value" : "us-west-2",
+               "name" : "AWS_REGION"
+            }
+         ],
+         "memory" : 100,
+         "name" : "pumpkin",
+         "image" : "jamesonwilliams/pumpkin",
+         "essential" : true,
+         "portMappings" : [
+            {
+               "hostPort" : 9112,
+               "containerPort" : 9112,
+               "protocol" : "tcp"
+            }
+         ]
+      }
+   ]
+}

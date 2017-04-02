@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100|Roboto:100');
+
+#container {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    font-size: x-large;
+}
+.cm-formatting {
+    color: #efefef;
+}
+
+.CodeMirror-activeline .cm-formatting,
+.CodeMirror-activeline .cm-string
+{
+    display: inline;
+}
+
+.CodeMirror {
+    border: none;
+}
+.cm-comment {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    background-color: #f5f5f5 !important;
+}
+.cm-quote {
+    border-left: 3px solid green;
+        padding: 1em;
+    font-style: italic;
+}
+
+[class^='cm-variable-']::before {
+    content: '* ';
+}
+
+button {
+    color: #ffffff;
+    background: #34d99c;
+    padding: 0.5em;
+    text-decoration: none;
+	font-weight: 700;
+    font-size: medium;
+    border: none;
+	float: right;
+}
+
+button:hover {
+    background: #3a4d46;
+    text-decoration: none;
+}
